@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Меню ресторана</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Меню ресторана</h2>
+
+    <div class="table-select">
+      <label>Выберите стол: 
+        <select id="tableNumber">
+          <option value="">Не выбран</option>
+          <option value="1">Стол 1</option>
+          <option value="2">Стол 2</option>
+          <option value="3">Стол 3</option>
+          <option value="4">Стол 4</option>
+          <option value="5">Стол 5</option>
+          <option value="6">Стол 6</option>
+          <option value="7">Стол 7</option>
+          <option value="8">Стол 8</option>
+          <option value="9">Стол 9</option>
+          <option value="10">Стол 10</option>
+        </select>
+      </label>
+    </div>
+
+    <div class="tabs">
+      <button class="tab-btn active" data-cat="food">Еда</button>
+      <button class="tab-btn" data-cat="drinks">Напитки</button>
+      <button class="tab-btn" data-cat="salads">Салаты</button>
+    </div>
+
+    <div class="menu-grid" id="menu"></div>
+
+    <div style="margin-top:20px; text-align:center;">
+      <a href="../html/cart.html"><button class="go-cart">Перейти в корзину</button></a>
+      <a href="../admin.html"><button class="go-cart">Админка</button></a>
+    </div>
+  </div>
+
+  <script src="../js/menu.js"></script>
+</body>
+</html>
